@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+nav{
+    background-color: white;
+}
+
+.main{
+    background-image: url("assets/mainBackground.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto auto;
+}
+
+.index-content{
+
+}
+
+.col-right-content>img{
+
+}
+
+ul.my-item-head{
+    display: grid;
+    place-items: center;
+}
+
+li.my-item{
+    list-style: none;
+    counter-increment: myCounter;
+    background: #f0f0f0;
+    top: 1em;
+    border-radius:  0em 2px 1em 1em;
+    font-family: Constantia;
+    padding: 10px;
+    margin: 4px;
+    width: 50%;
+}
+
+li.my-item:before{
+    content: counter(myCounter, decimal-leading-zero);
+    border-radius: 25px;
+    background-color:  #48CFAD;
+    padding: 10px;
+}
+
+li.my-item:nth-child(odd){
+    background: #848282;
+}
+
+.nav-link:hover{
+    background-color: #C0C0C0;
+}
+
+.about-me{
+    background-color: rgb(66, 66, 66);
+}
+.achievement{
+    background-color: rgb(66, 66, 66);
+}
+.skills{
+    background-color: rgb(66, 66, 66); 
+}
+.education{
+    background-color: rgb(66, 66, 66);
+}
+
+.contact{
+    background-color: rgb(66, 66, 66);
+}
+
+.col-left-content{
+    display: grid;
+    place-items: center;
+    width: 50%;
+}
+.col-left-content p,h1{
+    color: rgb(255, 255, 255);
+    
+}
+
+.heading-title{
+    border-bottom: 5px solid rgb(3, 143, 19);
+}
+
+.copyright-check{
+    background-color: white;
+    color: black;
+}
+
+.foot-left{
+    width: 50%;
+}
+
+.foot-right{
+    width: 50%;
+}
+
+#copyright-footer{
+    text-align: center;
+    top: 80%;
+    width: 100%;
+}
+
+.fa {
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.section-body{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 5px;
+}
+.section-item{
+    background-color: rgb(108, 106, 104);
+    border-radius: 20px 20px 20px 20px;
+    min-width: 10px;
+}
+.section-item>h2{
+    text-align: center;
+}
+.head{
+
+}
