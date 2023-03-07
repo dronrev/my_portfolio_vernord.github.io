@@ -6,23 +6,60 @@ body{
 }
 
 nav{
-    background-color: white;
+    background-color: #393053;
 }
 
 .main{
     background-image: url("assets/mainBackground.jpg");
     background-size: cover;
     min-height: 100vh;
+}
+
+
+.heading-title{
+    border-bottom: 5px solid rgb(3, 143, 19);
+    width: fit-content;
+}
+
+.fisrt-layer{
     display: grid;
     place-items: center;
-    grid-template-columns: auto auto;
+    width: 50%;
 }
 
-.index-content{
-
+.first-layer p,h1{
+    color: rgb(255, 255, 255);
+    
 }
 
-.col-right-content>img{
+
+.first-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    min-height: 80vh;
+}
+
+
+.prof-pic img{
+    border-radius: 20px;
+    max-width: 300px;
+    height: 300px;
+}
+
+@media only screen and (max-width : 1000px){
+
+    .first-content{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+    .prof-pic img{
+        margin-top: 20px;
+        border-radius: 20px;
+        max-width: 200px;
+        height: 200px;
+    }
 
 }
 
@@ -75,20 +112,6 @@ li.my-item:nth-child(odd){
     background-color: rgb(66, 66, 66);
 }
 
-.col-left-content{
-    display: grid;
-    place-items: center;
-    width: 50%;
-}
-.col-left-content p,h1{
-    color: rgb(255, 255, 255);
-    
-}
-
-.heading-title{
-    border-bottom: 5px solid rgb(3, 143, 19);
-}
-
 .copyright-check{
     background-color: white;
     color: black;
@@ -129,6 +152,4 @@ li.my-item:nth-child(odd){
 .section-item>h2{
     text-align: center;
 }
-.head{
 
-}
