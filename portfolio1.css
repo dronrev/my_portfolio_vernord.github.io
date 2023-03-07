@@ -10,11 +10,16 @@ nav{
 }
 
 .main{
-    background-image: url("assets/mainBackground.jpg");
+    background-image: url("assets/first-section-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
 }
 
+#brand{
+    font-family: cursive;
+}
 
 .heading-title{
     border-bottom: 5px solid rgb(3, 143, 19);
